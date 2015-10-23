@@ -1,0 +1,27 @@
+{
+  "name": "angularapp",
+  "description": "http service factory",
+  "main": "app.js",
+  "authors": [
+    "zhuhj"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "http",
+    "service"
+  ],
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/public/lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.7",
+    "angular-route": "~1.4.7"
+  }
+}
