@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html data-ng-app="myApp">
+<head>
+    <title>关于http的服务</title>
+</head>
+<body>
+<ul>
+    <li data-ng-repeat="user in users">
+        <spn ng-bind="user.username"></spn>
+    </li>
+</ul>
+
+</body>
+<script src="lib/angular/angular.min.js" type="text/javascript"></script>
+<script src="js/http.js" type="text/javascript"></script>
+</html>
