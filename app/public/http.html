@@ -3,10 +3,12 @@
 <head>
     <title>关于http的服务</title>
 </head>
-<body>
+<body data-ng-controller="bookCtrl">
+<input type="text" data-ng-model="bookname"/>
+<input type="button" value="添加" data-ng-click="addBook()">
 <ul>
-    <li data-ng-repeat="user in users">
-        <spn ng-bind="user.username"></spn>
+    <li data-ng-repeat="book in books">
+        <spn ng-bind="book.name"></spn>
     </li>
 </ul>
 

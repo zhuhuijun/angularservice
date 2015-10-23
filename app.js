@@ -23,12 +23,12 @@ app.post('/check', function (req, res) {
     var re = {exists: t > 30};
     res.json(re);
 });
-app.get('/GetUser', function (req, res) {
-    var users = [
-        {username: 'zhuhj'},
-        {username: 'linqq'},
-        {username: 'zhuzx'}
+app.get('/GetBooks', function (req, res) {
+    var books = [
+        {name: 'zhuhj'},
+        {name: 'linqq'},
+        {name: 'zhuzx'}
     ];
-    res.json(users);
+    res.json(books);
 });
 app.listen(8080);
