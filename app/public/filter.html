@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html data-ng-app="myapp">
+<head>
+    <title>filter</title>
+</head>
+<body data-ng-controller="FilterCtrl">
+<span>{{130000000|date}}</span>
+<span data-ng-bind="name"></span>
+<span data-ng-bind="mony|currency"></span>
+<span data-ng-bind="mony|currency:'@'"></span>
+<span data-ng-bind="mony|curr:'@':'@'"></span>
+<ul>
+    <li data-ng-repeat="item in items|limitTo:3|orderBy:'age':true">{{item.age}}</li>
+</ul>
+<ul>
+    <li data-ng-repeat="item in items|limitTo:3|bb:'age':false">{{item.age}}</li>
+</ul>
+</body>
+<script src="lib/angular/angular.min.js" type="text/javascript"></script>
+<script src="js/filter.js" type="text/javascript"></script>
+
+</html>
